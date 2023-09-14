@@ -1,8 +1,11 @@
+import { Container } from "react-bootstrap"
+import { AppName } from "../constants/Global"
+
 function Footer(){
     return (
-        <div>
-            &copy; Copyright 2023-<script>document.write(new Date().getFullYear())</script>, Xavier Dev.
-        </div>
+        <Container>
+            &copy; Copyright 2023-<script>document.write(new Date().getFullYear())</script>, {AppName}.
+        </Container>
     )
 }
 

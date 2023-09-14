@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Menu from "../components/Menu";
+import Footer from '../components/Footer';
 
 function About(){
     return (
@@ -8,7 +9,7 @@ function About(){
             <Container>
                 <Row>
                     <Col xs={12} md={6}>
-                    <h2>About Us</h2>
+                    <h1>Quem Somos</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                         at mattis magna. Nullam a ullamcorper quam. In hac habitasse
@@ -24,6 +25,7 @@ function About(){
                     </Col>
                 </Row>            
             </Container>
+            <Footer />
         </div>
     )
 }

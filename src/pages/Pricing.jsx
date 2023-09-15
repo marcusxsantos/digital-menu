@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
+import { AppName } from '../constants/Global';
 
 function Pricing() {
   const plans = [
@@ -26,7 +27,8 @@ function Pricing() {
     <div>
         <Menu />
         <Container className="my-5">
-        <h1 className="text-center mb-4">Nossos Planos de Preços</h1>
+        <h1 className="text-center mb-4">Quanto custa o {AppName}?</h1>
+        <h2>Comece gratuitamente hoje. Temos planos para todos os tamanhos de empresas. Não é necessário cartão de crédito.</h2>
         <Row>
             {plans.map((plan, index) => (
             <Col key={index} md={4} className="mb-4">
